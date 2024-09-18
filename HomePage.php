@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Guest;
 class HomePage
 {
     function tampil() : void {
@@ -7,7 +7,7 @@ class HomePage
     }
 }
 
-
+namespace App\Admin;
 class HomePage
 {
     function tampil() : void {
@@ -15,6 +15,15 @@ class HomePage
     }
 }
 
+namespace App\Admin;
+class ManajemenArtikel
+{
+    public function tambah() : void
+    {
+        echo "Artikel berhasil ditambahkan";
+    }
+}
 
-$hp = new HomePage();
+
+$hp = new \App\Guest\HomePage();
 $hp->tampil();
