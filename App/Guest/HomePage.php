@@ -1,9 +1,8 @@
 <?php
-namespace App\Admin;
-class ManajemenArtikel
+namespace App\Guest;
+class HomePage
 {
-    public function tambah() : void
-    {
-        echo "Artikel berhasil ditambahkan";
+    public function tampil() : void {
+        echo "Halaman depan guest";
     }
 }
